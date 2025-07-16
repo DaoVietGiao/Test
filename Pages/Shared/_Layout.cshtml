@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Asp</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Asp.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="header-inner clearfix">
+            <a class="brand pull-left" href="/">
+                <img src="https://www.hitechwiresasia.com/images/HWAmedia/Logo/HWA logo 5.png" alt="hitechwiresasia" />
+            </a>
+            <div class="header-search pull-right">
+                <div class="bannergroup">
+
+                    <div class="banneritem">
+                        <a href="/index.php/vi/component/banners/click/9" target="_blank" rel="noopener noreferrer"
+                            title="THERMO Groupe link">
+                            <img src="https://www.hitechwiresasia.com/images/HWAmedia/Logo/THERMO groupe link 5 en.png"
+                                alt="THERMO Groupe link" />
+                        </a>
+                        <div class="clr"></div>
+                    </div>
+
+                </div>
+                <div class="mod-languages">
+
+                    <ul class="lang-inline">
+                        <li dir="ltr">
+                            <a href="/index.php/en/">
+                                <img src="/Asp/wwwroot/en_gb.gif" alt="English (United Kingdom)"
+                                    title="English (United Kingdom)" /> </a>
+                        </li>
+                        <li dir="ltr">
+                            <a href="/index.php/fr/">
+                                <img src="/Asp/wwwroot/fr_fr.gif" alt="Français (France)" title="Français (France)" />
+                            </a>
+                        </li>
+                        <li dir="ltr">
+                            <a href="/index.php/ko/">
+                                <img src="/Asp/wwwroot/ko_kr.gif" alt="한국어 (ROK)" title="한국어 (ROK)" />
+                            </a>
+                        </li>
+                        <li class="lang-active" dir="ltr">
+                            <a href="/index.php/vi/">
+                                <img src="/Asp/wwwroot/vi_vn.gif" alt="Tiếng Việt" title="Tiếng Việt" />
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="pull-right">
+                <a href="#top" id="back-top">
+                    Back to top
+                </a>
+            </p>
+            <p>
+                &copy; 2025 HWA, HI-TECH WIRES ASIA CO., LTD | 46, ROAD N° 6, VSIP 1, THUAN AN, BINH DUONG PROVINCE |
+                sales@hitechwiresasia.com <!--hitechwiresasia -->
+            </p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
